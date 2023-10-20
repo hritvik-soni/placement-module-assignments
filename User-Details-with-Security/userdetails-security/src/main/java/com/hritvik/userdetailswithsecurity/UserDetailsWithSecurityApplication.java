@@ -1,13 +1,13 @@
-package com.hritvik.userdetails;
+package com.hritvik.userdetailswithsecurity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UserDetailsApplication {
+public class UserDetailsWithSecurityApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UserDetailsApplication.class, args);
+		SpringApplication.run(UserDetailsWithSecurityApplication.class, args);
 	}
 
 }
