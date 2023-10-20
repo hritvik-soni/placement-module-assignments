@@ -29,7 +29,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth ->
-                        auth.requestMatchers("/product/welcome","/swagger-ui/index.html#", "/user/new","user/savePassword").permitAll()
+                        auth.requestMatchers("/product/welcome","/swagger-ui/index.html#/", "/user/new","user/savePassword").permitAll()
                                 .requestMatchers("/product/**","/user/**")
                                 .authenticated()
                 )
